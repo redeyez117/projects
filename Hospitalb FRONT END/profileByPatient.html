@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hospitalb</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Admin.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="navigation">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+<ul class="navbar-nav mr-auto">
+   <li class="nav-item">
+    <span class="navbar-brand">Welcome Fatjon Beshi</label>
+    </li>
+</ul>
+    <ul class="navbar-nav">
+<li class="nav-item">
+  <button type="submit" onclick="window.open('profileByPatient.html','_self');" class="btn btn-outline-light active">Personal Profile</button>
+</li>
+<li class="nav-item">
+  <button type="submit" onclick="window.open('bookAppointment.html','_self');" class="btn btn-outline-light">Book an Appointment</button>
+</li>
+    </ul>
+
+  </nav>
+
+
+<div class="row justify-content-center">
+  <div class="col-md-9 mt-5">
+    <form class="form-control">
+      <div class="col-md-3 mb-3">
+        <label style="color:blue">Personal information</label>
+      </div>
+
+      <div style="margin-left:40%">
+
+<div class="container">
+
+  <div class="row form-inline mb-3">
+    <div class="col-1">
+      <label style="margin-left:20px" for="name">Name:</label>
+    </div>
+    <div>
+  <input type="text" id="name" class="form-control" value="Fatjon" disabled >
+    </div>
+  </div>
+
+
+  <div class="row form-inline mb-3">
+    <div class="col-md-1">
+      <label for="lastname" class="">Surname:</label>
+    </div>
+    <div>
+  <input type="text" id="lastname" class="form-control" value="Beshi" disabled >
+    </div>
+  </div>
+
+  <div class="row form-inline mb-3">
+    <div style="margin-left:-122px">
+      <label for="ID" class="control-label">Health Booklet ID Number:</label>
+    </div>
+    <div>
+  <input type="text" id="ID" class="form-control" value="TF456740D" disabled >
+    </div>
+  </div>
+
+  <div class="row form-inline mb-3">
+    <div class="col-md-1">
+      <label for="date" class="control-label">Birthday:</label>
+    </div>
+    <div>
+  <input type="text" id="date" class="form-control" value="16/08/1990" disabled >
+    </div>
+  </div>
+
+<div class="row form-inline">
+  <div class="col-md-3">
+  <label style="margin-left:-190px" class="control-label">Phone Number:</label>
+  </div>
+        <div style="margin-left:-140px">
+          <input type="text" class="form-control" value="+355684032444" disabled>
+        </div>
+        <button style="height:40px" class="btn btn-warning ml-1">Edit</button>
+</div>
+
+        </div>
+
+</div>
+
+
+
+
+      <hr>
+          <div class="col-md-3 mb-3">
+
+            <label style="color:blue">Medical Information</label>
+
+          </div>
+
+      <div class="row justify-content-center">
+      <div class="col-md-3">
+        <label>Blood type : AB+ </label>
+      </div>
+
+      <div class="col-md-3 mb-1">
+
+      <div>
+        <label>Inherited Diseases</label>
+      </div>
+
+             <div>
+              <input type="checkbox" class="form-check-input" id="materialInline1" checked disabled>
+              <label class="form-check-label" for="materialInline1">Diabetes</label>
+            </div>
+
+
+            <div>
+                <input type="checkbox" class="form-check-input" id="materialInline3" checked disabled>
+                <label class="form-check-label" for="materialInline3">Heart Diseases</label>
+            </div>
+
+
+            <div>
+                <input type="checkbox" class="form-check-input" id="materialInline6" checked disabled>
+                <label class="form-check-label" for="materialInline2">Blind</label>
+            </div>
+
+      </div>
+
+      </div>
+
+      <hr>
+      <div class="col-md-3 mb-3">
+      <label style="color:blue">Examination Information</label>
+      </div>
+
+      <div class="row justify-content-center">
+
+      <div class="col-md-9">
+        <table class="table table-bordered table-hover">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Examination Date</th>
+            <th scope="col">Type of Examination</th>
+            <th scope="col">Notes about the examination</th>
+            <th scope="col">Presciption</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+
+            <td>24/04/2018</td>
+            <td>Simple examination visit</td>
+            <td>Patient had severe head aches caused mostly from sleep disorder</td>
+            <td>10 pills of advil, 1 pill per day</td>
+          </tr>
+          <tr>
+
+            <td>02/06/2018</td>
+            <td>Head Scanner Examination</td>
+            <td>Head aches were continuously increasing and performed head scanner, which result negative to any disease </td>
+            <td>10 pills of advil, 2 pills per day</td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+  </div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>

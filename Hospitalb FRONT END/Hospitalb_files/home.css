@@ -1,0 +1,28 @@
+body{
+  background-image:url("hospital.jpg");
+  background-repeat:no repeat;
+  background-size: cover;
+
+}
+
+#carusel{
+
+   margin-top: 10%;
+   border: none !important;
+
+
+}
+.carousel-inner img {
+      width: 1100px;
+      height: 500px;
+      margin-left: 20%;
+
+          border-style: hidden;
+          border-radius:10px;
+
+}
+
+h3{
+ color: blue;
+
+}

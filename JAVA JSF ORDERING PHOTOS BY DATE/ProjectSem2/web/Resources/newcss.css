@@ -1,0 +1,107 @@
+
+
+
+
+.loginbutton{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.loginbutton:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+
+
+#form{
+    margin-top: 300px;
+    margin-left: 35px;
+    
+    
+}
+
+
+body{
+    
+    background-image: url("img/Windows 7 Logon Screen Background Logon backgrou.jpg");
+    background-size: 1400px;
+    
+    background-repeat: no-repeat;
+   
+    
+}
+
+.login{
+    background-image: url("img/hd-wallpapers-websites-0.jpg");
+    
+}
+
+
+#panel1{
+    border-radius: 10px;
+    
+    border:solid;
+    border-width: 2px;
+    border-color:lightskyblue;
+    height: 450px;
+    margin-top: 100px;
+    
+    background: rgba(0,0,0,0.6);
+}
+
+#panel2{
+    border-radius: 10px;
+    height: 450px;
+    margin-top: 100px;
+    border:solid;
+    border-width: 2px;
+    border-color:lightskyblue;
+    background: rgba(0,0,0,0.6);
+}
+
+h3{
+    text-align: center;
+    
+}
+
+
+
+
+#upload-panel{
+    border-radius: 5px;
+    border:1px solid #DDD;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    line-height: 150px;
+    color: #909090;
+    font-size: 26px;
+    font-family: "Tahoma";
+    text-align: center;
+    margin: 50px auto;
+}
+#upload-panel input[type='file']{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+.upload-progress{
+    width: 600px;
+    margin: 50px auto;
+}
+
+.upload-progress .progress{
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+    font-family: "Tahoma";
+    color: #909090;
+
+}

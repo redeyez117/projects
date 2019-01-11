@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hospitalb</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Doctor.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color:#08919C">
+
+<nav>
+  <ul class="topnav">
+    <li><a style="color:red" onclick="location.href = 'doctorView.html';">Search Patient</a></li>
+    <li><a onclick="location.href = 'addPatient.html';">Add Patient</a></li>
+    <li><a onclick="location.href = 'showAppointments.html';">Show Appointments</a></li>
+    <li class="topnav-right"><a href="#home">Logout</a></li>
+  </ul>
+</nav>
+
+
+<div class="row justify-content-center">
+<div class="col-4">
+  <form class="form-inline">
+    <input class="form-control w-75" type="text" placeholder="Search" aria-label="Search">
+    <button id="searchbtn" class="btn btn-primary btn-rounded" type="submit">Search</button>
+  </form>
+</div>
+</div>
+
+
+</body>
+</html>

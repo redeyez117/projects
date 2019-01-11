@@ -1,0 +1,174 @@
+body{
+  height:100%;
+  width: 100%;
+	background-repeat: no-repeat;
+  background-image: url("Images/Ardi.jpg");
+  background-size:cover;
+
+}
+
+#title{
+
+ margin-left: 45%;
+ font-size: 28px;
+ font-family: sans-serif;
+}
+
+button{
+
+  border:none;
+  outline:none;
+  height:40px;
+ 	color:#fff;
+ 	background:#fb2525;
+ 	font-size:18px;
+ 	border-radius:20px;
+}
+
+.container{
+  background-color: black;
+  opacity:0.2;
+  padding:20%;
+
+}
+
+.row{
+  display:flex;
+  position: relative;
+  justify-content: center;
+
+}
+
+.addStudent{
+ margin-top:-30%;
+ margin-left: 10%;
+}
+
+.addProfessor{
+margin-top:-30%;
+margin-right:10%;
+
+}
+
+.professorDiv{
+  width: 320px;
+	height: 420px;
+	background: #000;
+	color:#fff;
+	top: 75%;
+	left:50%;
+	position:relative;
+	transform: translate(-50%,50%);
+	box-sizing:border-box;
+	padding: 70px 30px;
+	margin-top:50px;
+}
+
+.studentDiv{
+    width: 320px;
+  	height: 420px;
+  	background: #000;
+  	color:#fff;
+  	top: 75%;
+  	left:50%;
+  	position:relative;
+  	transform: translate(-50%,50%);
+  	box-sizing:border-box;
+  	padding: 70px 30px;
+  	margin-top:50px;
+}
+
+.select{
+  color: black;
+
+}
+
+
+.professorDiv input{
+
+	 width:100%;
+	 margin-bottom:30px;
+
+ }
+
+
+ .professorDiv input[type="text"],input[type="password"],input[type="email"]{
+
+	 border:none;
+	 border-bottom:1px solid #fff;
+	 background:transparent;
+	 outline:none;
+	 height:40px;
+	 color:#fff;
+	 font-size:16px;
+
+ }
+
+ .professorDiv input[type="submit"]{
+
+	 border:none;
+	 outline:none;
+	 height:40px;
+	 color:#fff;
+	 background:#fb2525;
+	 font-size:18px;
+	 border-radius:20px;
+
+
+ }
+
+ .professorDiv input[type="submit"]:hover{
+	 background-color:green;
+	 cursor:pointer;
+ }
+
+ .studentDiv input{
+
+	 width:100%;
+	 margin-bottom:80px;
+
+ }
+
+
+ .studentDiv input[type="text"],input[type="password"]{
+
+	 border:none;
+	 border-bottom:1px solid #fff;
+	 background:transparent;
+	 outline:none;
+	 height:40px;
+	 color:#fff;
+	 font-size:16px;
+ }
+
+ .studentDiv input[type="submit"]{
+
+	 border:none;
+	 outline:none;
+	 height:40px;
+	 color:#fff;
+	 background:#fb2525;
+	 font-size:18px;
+	 border-radius:20px;
+
+
+ }
+
+ .studentDiv input[type="submit"]:hover{
+	 background-color:green;
+	 cursor:pointer;
+ }
+
+ .professorContainer{
+    margin-top: -40%;
+    margin-right: 27%;
+    display:none;
+
+ }
+
+ .studentContainer{
+    margin-top: -24.5%;
+    margin-left: 27%;
+    display:none;
+
+ }

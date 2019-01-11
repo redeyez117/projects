@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Professors Panel</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.1/css/responsive.bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="ProfessorView.css">
+
+<style>
+	.rows {
+		display: none;
+	}
+</style>
+
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <select id="faculty" class="form-control">
+    <option disabled selected>Select Faculty...</option>
+    <option value="1">Business</option>
+    <option value="2">Business & IT</option>
+    <option value="3">Software Engineering</option>
+    <option value="4">Industrial Engineering</option>
+  </select>
+  <br>
+  <button class="btn btn-default" onclick="show(); generate()">Proceed</button>
+</div>
+
+<div class="col-md-6 col-md-offset-3" style="margin-top: 100px;">
+
+  <table id="courses" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Open</th>
+            </tr>
+        </thead>
+		<tbody>
+			<tr class="rows">
+				<td id="firstCourse"></td>
+				<td><a id="firstCourseLink" href="">Details</a></td>
+			</tr>
+			<tr class="rows">
+				<td id="secondCourse"></td>
+				<td><a id="secondCourseLink" href="">Details</a></td>
+			</tr>
+			<tr class="rows">
+				<td id="thirdCourse"></td>
+				<td><a id="thirdCourseLink" href="">Details</a></td>
+			</tr>
+			<tr class="rows">
+				<td id="fourthCourse"></td>
+				<td><a id="fourthCourseLink" href="">Details</a></td>
+			</tr>
+			<tr class="rows">
+				<td id="fifthCourse"></td>
+				<td><a id="fifthCourseLink" href="">Details</a></td>
+			</tr>
+		</tbody>
+      </table>
+</div>
+</div>
+</div>
+</body>
+
+</html>
+
+<script>
+		
+	function show() {
+		var collection = document.getElementsByClassName("rows");
+		
+		for (var i = 0; i < collection.length; i++) {
+			collection[i].style.display = "table-row";
+		}
+	};	
+	function generate () {
+	
+		if (document.getElementById("faculty").value == 1) {
+			document.getElementById("firstCourse").innerHTML = "Calculus";
+			document.getElementById("secondCourse").innerHTML = "Java";
+			document.getElementById("thirdCourse").innerHTML = "Economics";
+			document.getElementById("fourthCourse").innerHTML = "Academic Writting";
+			document.getElementById("fifthCourse").innerHTML = "Network & Communication";
+			
+			document.getElementById("firstCourseLink").href = "AttendanceView.php?id=1";
+			document.getElementById("secondCourseLink").href = "AttendanceView.php?id=2";
+			document.getElementById("thirdCourseLink").href = "AttendanceView.php?id=3";
+			document.getElementById("fourthCourseLink").href = "AttendanceView.php?id=4";
+			document.getElementById("fifthCourseLink").href = "AttendanceView.php?id=5";
+			
+			
+		} else if (document.getElementById("faculty").value == 2) {
+			document.getElementById("firstCourse").innerHTML = "Database";
+			document.getElementById("secondCourse").innerHTML = "Finance";
+			document.getElementById("thirdCourse").innerHTML = "Electronics";
+			document.getElementById("fourthCourse").innerHTML = "Algebra";
+			document.getElementById("fifthCourse").innerHTML = "Calculus 2";
+			
+			document.getElementById("firstCourseLink").href = "AttendanceView.php?id=6";
+			document.getElementById("secondCourseLink").href = "AttendanceView.php?id=7";
+			document.getElementById("thirdCourseLink").href = "AttendanceView.php?id=8";
+			document.getElementById("fourthCourseLink").href = "AttendanceView.php?id=9";
+			document.getElementById("fifthCourseLink").href = "AttendanceView.php?id=10";
+			
+		} else if (document.getElementById("faculty").value == 3) {
+			document.getElementById("firstCourse").innerHTML = "Security Engineering";
+			document.getElementById("secondCourse").innerHTML = "Software Architecture";
+			document.getElementById("thirdCourse").innerHTML = "Computer Architecture";
+			document.getElementById("fourthCourse").innerHTML = "Linux";
+			document.getElementById("fifthCourse").innerHTML = "Human Resources";
+			
+			document.getElementById("firstCourseLink").href = "AttendanceView.php?id=11";
+			document.getElementById("secondCourseLink").href = "AttendanceView.php?id=12";
+			document.getElementById("thirdCourseLink").href = "AttendanceView.php?id=13";
+			document.getElementById("fourthCourseLink").href = "AttendanceView.php?id=14";
+			document.getElementById("fifthCourseLink").href = "AttendanceView.php?id=15";
+			
+		} else if (document.getElementById("faculty").value == 4) {
+			document.getElementById("firstCourse").innerHTML = "Ethics";
+			document.getElementById("secondCourse").innerHTML = "Statistics";
+			document.getElementById("thirdCourse").innerHTML = "Business Law";
+			document.getElementById("fourthCourse").innerHTML = "Accounting";
+			document.getElementById("fifthCourse").innerHTML = "Chemistry";
+			
+			document.getElementById("firstCourseLink").href = "AttendanceView.php?id=16";
+			document.getElementById("secondCourseLink").href = "AttendanceView.php?id=17";
+			document.getElementById("thirdCourseLink").href = "AttendanceView.php?id=18";
+			document.getElementById("fourthCourseLink").href = "AttendanceView.php?id=19";
+			document.getElementById("fifthCourseLink").href = "AttendanceView.php?id=20";
+		}
+	}
+</script>
